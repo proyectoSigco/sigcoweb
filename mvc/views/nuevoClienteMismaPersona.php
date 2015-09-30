@@ -8,7 +8,7 @@ if ($_SESSION['datosLogin']==null || $_SESSION['datosLogin']['EstadoPersona']=="
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Nuevo cliente</title>
+    <title>Nueva empresa para un cliente</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.4 -->
@@ -193,13 +193,13 @@ desired effect
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Formulario de registro
-                <small>Clientes</small>
+                Empresas de clientes
+                <small>Formulario de registro</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
                 <li><a href="#">Clientes</a></li>
-                <li class="active">Nuevo cliente</li>
+                <li class="active">Nueva empresa</li>
             </ol>
         </section>
 
@@ -220,9 +220,15 @@ desired effect
                               method="post" class="validacion" id="formValidacion">
 
                             <!-- general form elements disabled -->
-                            <div class="box box-default">
+                            <div class="box box-info box-solid collapsed-box">
                                 <div class="box-header with-border">
-                                    <h3 class="box-title">Nueva empresa para un cliente</h3>
+                                    <h3 class="box-title">Indicaciones de registro</h3>
+                                    <div class="box-tools pull-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+                                        </button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i>
+                                        </button>
+                                    </div>
                                 </div>
                                 <!-- /.box-header -->
                                 <div class="box-body">
@@ -239,7 +245,7 @@ desired effect
 
                             <div class="box box-default collapsed-box box-solid">
                                 <div class="box-header with-border">
-                                    <h3 class="box-title">Ver información personal registrada</h3>
+                                    <h3 class="box-title">Ver información de contacto registrada</h3>
                                     <div class="box-tools pull-right">
                                         <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
                                     </div><!-- /.box-tools -->
@@ -323,7 +329,7 @@ desired effect
                                                 tabindex="6">
                                             <option disabled selected>Seleccione...</option>
                                             <?php
-                                            require_once '../facades/LugaresFacade.php';
+                                            include_once '../facades/LugaresFacade.php';
                                             $lugares = new LugaresFacade();
                                             $todasCiudades = $lugares->listarTodos();
                                             foreach ($todasCiudades as $ciudad) {
@@ -377,11 +383,11 @@ desired effect
                                         </select>
                                     </div>
                                     <div class="box-footer">
-                                        <input type="button" class="btn btn-warning" tabindex="16"
-                                               onclick="location.href='buscarClientes.php'" value="Cancelar"/>
-                                        <button type="submit" class="btn btn-success pull-right" tabindex="15"
+                                        <button type="submit" class="btn btn-success" tabindex="15"
                                                 value="guardar" name="guardar" id="guardar">Añadir empresa al cliente
                                         </button>
+                                        <input type="button" class="btn btn-warning pull-right" tabindex="16"
+                                               onclick="location.href='buscarClientes.php'" value="Cancelar"/>
                                     </div>
                                     <!-- /.box-footer -->
                                     <!-- /.form-group -->

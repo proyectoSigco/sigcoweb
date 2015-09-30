@@ -49,17 +49,19 @@
         <option value="$PROJECT_DIR$/404.html" />
         <option value="$PROJECT_DIR$/500.html" />
         <option value="$PROJECT_DIR$/contacto.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/institucional.html" />
-        <option value="$PROJECT_DIR$/productos.html" />
         <option value="$PROJECT_DIR$/servicios.html" />
         <option value="$PROJECT_DIR$/mvc/views/asignarMeta.php" />
         <option value="$PROJECT_DIR$/mvc/models/EmpleadoDao.php" />
         <option value="$PROJECT_DIR$/mvc/models/ClientesDao.php" />
         <option value="$PROJECT_DIR$/mvc/views/buscarClientes.php" />
-        <option value="$PROJECT_DIR$/mvc/views/nuevoCliente.php" />
         <option value="$PROJECT_DIR$/mvc/models/LugaresDao.php" />
         <option value="$PROJECT_DIR$/mvc/views/nuevoClienteMismaPersona.php" />
+        <option value="$PROJECT_DIR$/productos.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/mvc/views/nuevoCliente.php" />
       </list>
     </option>
   </component>
@@ -104,6 +106,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -124,7 +127,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,7 +134,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.splitter.proportion" value="0.22015655" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="nuev&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/mvc/views/nuevoCliente.php&#10;nuevo&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/mvc/views/nuevoClienteMismaPersona.php&#10;buscarcl&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/mvc/views/buscarClientes.php&#10;nuevocl&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/mvc/views/nuevoCliente.php&#10;asigna&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/mvc/views/asignarMeta.php&#10;contac&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/contact-2.html&#10;service&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/services.html&#10;services&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/services-2.html&#10;about&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/about.html&#10;home&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/home-2.html" />
+    <property name="SearchEverywhereHistoryKey" value="nuevo&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/mvc/views/nuevoCliente.php&#10;log&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/login.php&#10;login&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/login.html&#10;prod&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/productos.html&#10;servi&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/servicios.html&#10;produ&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/productos.html&#10;instituci&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/institucional.html&#10;dex&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/index.html&#10;nuev&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/mvc/views/nuevoCliente.php&#10;buscarcl&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/mvc/views/buscarClientes.php&#10;nuevocl&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/mvc/views/nuevoCliente.php&#10;asigna&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/mvc/views/asignarMeta.php&#10;contac&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/contact-2.html&#10;service&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/services.html&#10;services&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/services-2.html&#10;about&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/about.html&#10;home&#9;FILE&#9;file://C:/xampp/htdocs/sigcoweb/home-2.html" />
     <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
@@ -181,11 +183,11 @@
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15874036" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16066837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14203085" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14203085" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -246,34 +248,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16493313">
-          <caret line="39" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="276" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/institucional.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10549777">
-          <caret line="36" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/productos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33283803">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicios.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25260028">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/31996071-dff9-41e9-a532-5b07c7e142b4/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -329,16 +303,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.115068495">
           <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
-          <folding>
-            <marker date="1443620396318" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1443620396318" expanded="true" signature="-1:-1" placeholder="select * fro..lugares..." />
-            <marker date="1443620396318" expanded="true" signature="-1:-1" placeholder="select * fro..lugares..." />
-            <marker date="1443620396318" expanded="true" signature="-1:-1" placeholder="select * fro..lugares..." />
-            <marker date="1443620396318" expanded="true" signature="-1:-1" placeholder="select * fro..lugares..." />
-            <marker date="1443620396318" expanded="true" signature="-1:-1" placeholder="select * fro..lugares..." />
-            <marker date="1443620396318" expanded="true" signature="-1:-1" placeholder="UPDATE lugar..." />
-            <marker date="1443620396318" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..lugares..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -352,8 +317,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mvc/views/nuevoCliente.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26575342">
-          <caret line="217" column="24" selection-start-line="217" selection-start-column="24" selection-end-line="228" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.5219178">
+          <caret line="323" column="99" selection-start-line="323" selection-start-column="99" selection-end-line="323" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9495549">
+          <caret line="273" column="6" selection-start-line="273" selection-start-column="6" selection-end-line="273" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8659058">
+          <caret line="115" column="22" selection-start-line="65" selection-start-column="16" selection-end-line="115" selection-end-column="22" />
+          <folding>
+            <marker date="1443636623721" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70958906">
+          <caret line="183" column="6" selection-start-line="98" selection-start-column="0" selection-end-line="183" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/institucional.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2876712">
+          <caret line="58" column="89" selection-start-line="58" selection-start-column="89" selection-end-line="58" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/productos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32097003">
+          <caret line="223" column="144" selection-start-line="223" selection-start-column="144" selection-end-line="223" selection-end-column="144" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servicios.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47788873">
+          <caret line="245" column="49" selection-start-line="245" selection-start-column="49" selection-end-line="245" selection-end-column="49" />
           <folding />
         </state>
       </provider>

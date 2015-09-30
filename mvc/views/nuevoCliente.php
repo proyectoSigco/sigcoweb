@@ -280,10 +280,9 @@ desired effect
                                     <select class="form-control select2" name="IdLugar" id="IdLugar" required tabindex="6">
                                         <option disabled selected>Seleccione...</option>
                                         <?php
-                                        require_once '../models/LugaresDao.php';
-                                        require_once '../utilities/Conexion.php';
-                                        $lugaresDao = new LugaresDao();
-                                        $todasCiudades = $lugaresDao->listarTodas();
+                                        require_once '../facades/LugaresFacade.php';
+                                        $lugaresFac = new LugaresFacade();
+                                        $todasCiudades = $lugaresFac->listarTodos();
                                         foreach ($todasCiudades as $ciudad) {
                                             ?>
                                             <option
@@ -300,9 +299,8 @@ desired effect
                                     <select class="form-control select2" name="IdTipo" id="IdTipo" required tabindex="7">
                                         <option selected="selected" disabled>Seleccione...</option>
                                         <?php
-                                        require_once '../models/TiposClienteDao.php';
-                                        require_once '../utilities/Conexion.php';
-                                        $tiposCliente = new TiposClienteDao();
+                                        require_once '../facades/TiposEmpresasFacade.php';
+                                        $tiposCliente = new TiposEmpresasFacade();
                                         $todosTiposCliente = $tiposCliente->listarTodos();
                                         foreach ($todosTiposCliente as $tipo) {
                                             ?>
@@ -321,10 +319,9 @@ desired effect
                                             tabindex="8">
                                         <option selected="selected" disabled>Seleccione...</option>
                                         <?php
-                                        require_once '../models/ActividadesClienteDao.php';
-                                        require_once '../utilities/Conexion.php';
-                                        $actividadesCliente = new ActividadesClienteDao();
-                                        $todasActividadesCliente = $actividadesCliente->listarTodas();
+                                        require_once '../facades/ActividadesEmpresasFacade.php';
+                                        $actividadesCliente = new ActividadesEmpresasFacade();
+                                        $todasActividadesCliente = $actividadesCliente->listarTodos();
                                         foreach ($todasActividadesCliente as $actividad) {
                                             ?>
                                             <option
@@ -406,8 +403,8 @@ desired effect
     </footer>
 
     <!-- jQuery 2.1.4--
- <script src="../../plugins/jQuery/jQuery-2.1.4.min.js" type="text/javascript"></script>
- <!-- Bootstrap 3.3.2 JS -->
+    <script src="../../plugins/jQuery/jQuery-2.1.4.min.js" type="text/javascript"></script>
+    <!-- Bootstrap 3.3.2 JS -->
     <script src="../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <!-- Select2 -->
     <script src="../../plugins/select2/select2.full.min.js" type="text/javascript"></script>

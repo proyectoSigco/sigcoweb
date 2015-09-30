@@ -7,7 +7,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Sigco | Productos</title>
+	<title>Sigco | Inicio</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,11 +16,13 @@
 	<link href="css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
 	<link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
-	<link href="css/theme.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="css/theme-aquatica.css" rel="stylesheet" type="text/css" media="all"/>
 	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
 	<!--[if gte IE 9]>
-	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
-	<![endif]-->
+
+	<!--[if gte IE 9]>
+        <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+    <![endif]-->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
 	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
@@ -122,23 +124,62 @@
 	</nav>
 </div>
 <div class="main-container">
-	<header class="page-header">
-		<div class="background-image-holder parallax-background">
-			<img class="background-image" alt="Background Image" src="img/hero3.jpg">
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<span class="text-white alt-font">Químicos, con calidad</span>
-					<h1 class="text-white">Nuestros productos</h1>
-					<p class="text-white lead">Se manejan productos que están dirigidos a <br>
-						los diferentes mercados industriales  <br>
-						ya que todos estos tienen innumerables fines.</p>
+	<section class="hero-slider">
+		<ul class="slides">
+			<li class="overlay">
+				<div class="background-image-holder parallax-background">
+					<img class="background-image" alt="Background Image" src="img/hero17.jpg">
 				</div>
-			</div><!--end of row-->
-		</div><!--end of container-->
-	</header>
+
+				<div class="container align-vertical">
+					<div class="row">
+						<div class="col-md-6 col-sm-9">
+							<h1 class="text-white">Aliados en soluciones químicas</h1>
+							<h4 class="text-white">Alianzas estratégicas</h4>
+							<!--<a target="_blank" href="http://www.mediumra.re/pivot/variant/builder.html" class="btn btn-primary btn-white">Customize Pivot</a>
+                            <a href="#" class="btn btn-primary btn-filled">Purchase Pivot</a>-->
+						</div>
+					</div>
+				</div><!--end of container-->
+			</li><!--end of individual slide-->
+
+			<!--end of individual slide-->
+
+			<li class="overlay">
+				<div class="background-image-holder parallax-background">
+					<img class="background-image" alt="Background Image" src="img/hero7.jpg">
+				</div>
+
+				<div class="container align-vertical">
+					<div class="row">
+						<div class="col-md-6 col-sm-9">
+							<h1 class="text-white">Acompañamiento y asesoría contínua.</h1>
+							<h4 class="text-white">Pregunte por nuestros servicios.</h4>
+							<!--<a target="_blank" href="http://www.mediumra.re/pivot/variant/builder.html" class="btn btn-primary btn-white">Customize Pivot</a>
+                            <a href="#" class="btn btn-primary btn-filled">Purchase Pivot</a>-->
+						</div>
+					</div>
+				</div><!--end of container-->
+			</li><!--end of individual slide-->
+
+			<li class="overlay">
+				<div class="background-image-holder parallax-background">
+					<img class="background-image" alt="Background Image" src="img/hero9.jpg">
+				</div>
+
+				<div class="container align-vertical">
+					<div class="row">
+						<div class="col-md-6 col-sm-9">
+							<h1 class="text-white">Productos amigables con el ambiente.</h1>
+							<h4 class="text-white">Precios económicos.</h4>
+							<!--<a target="_blank" href="http://www.mediumra.re/pivot/variant/builder.html" class="btn btn-primary btn-white">Customize Pivot</a>
+                            <a href="#" class="btn btn-primary btn-filled">Purchase Pivot</a>-->
+						</div>
+					</div>
+				</div><!--end of container-->
+			</li><!--end of individual slide-->
+		</ul>
+	</section>
 
 	<section class="primary-features duplicatable-content">
 		<div class="container">
@@ -146,143 +187,55 @@
 
 				<div class="col-md-4 col-sm-6 clearfix">
 					<div class="feature feature-icon-small">
-						<i class="icon icon-presentation icon-large"></i>
-						<h6 class="text-white">Mantenimiento</h6>
+						<i class="icon icon-document"></i>
+						<h6 class="text-white">Incentivo ambiental</h6>
 						<p class="text-white">
-							Productos personalizados e innovadores para el mantenimiento industrial de
-							acuerdo a las necesidades de la industria, con un acompañamiento técnico
-							idóneo que presta asesoría específica.
-						</p>
-					</div><!--end of feature-->
-				</div><div class="col-md-4 col-sm-6 clearfix">
-				<div class="feature feature-icon-small">
-					<i class="icon icon-piechart icon-large"></i>
-					<h6 class="text-white">Tratamiento de aguas</h6>
-					<p class="text-white">
-						El tratamiento de aguas residuales es algo vital a nivel mundial, ya que
-						disponer de gran cantidad y calidad de agua, nos permite conservar el medio
-						ambiente y dar a nuestra sociedad, salud y calidad de vida.
-					</p>
-				</div><!--end of feature-->
-			</div><div class="col-md-4 col-sm-6 clearfix">
-				<div class="feature feature-icon-small">
-					<i class="icon icon-camera icon-large"></i>
-					<h6 class="text-white">Tratamientos biológicos</h6>
-					<p class="text-white">
-						Desarrollo de bacterias	específicas para la degradación de
-						materia orgánica, hidrocarburos, compuestos orgánicos, así como bioaceleradores
-						de digestión anaeróbica y de compostaje.
-					</p>
-				</div><!--end of feature-->
-			</div><div class="col-md-4 col-sm-6 clearfix">
-				<div class="feature feature-icon-small">
-					<i class="icon icon-browser icon-large"></i>
-					<h6 class="text-white">Aerosoles</h6>
-					<p class="text-white">
-						Arosoles con un propelente natural que evita el deterioro de la capa de ozono
-						y contribuye a la disminución de emisión de gases. Compromiso en
-						la preservación del medio ambiente y la mejora continua de nuestros procesos.
-					</p>
-				</div><!--end of feature-->
-			</div><div class="col-md-4 col-sm-6 clearfix">
-				<div class="feature feature-icon-small">
-					<i class="icon icon-document"></i>
-					<h6 class="text-white">Productos innovadores</h6>
-					<p class="text-white">
-						Desarrollamos nuevas soluciones técnicas en productos químicos y biológicos
-						que cumplen con las especificaciones y necesidades de nuestros clientes.
-					</p>
-				</div><!--end of feature-->
-			</div>
-
-				<div class="col-md-4 col-sm-6 clearfix">
-					<div class="feature feature-icon-small">
-						<i class="icon icon-linegraph"></i>
-						<h6 class="text-white">Tratamientos químicos</h6>
-						<p class="text-white">
-							Ofrecemos soluciones químicas que permiten la recuperación de crudo y agua en las diferentes operaciones petroquímicas.
+							Es un trabajo mutuo entre nuestros colaboradores y clientes conscientes que
+							con ello mejoramos nuestro planeta.
 						</p>
 					</div><!--end of feature-->
 				</div>
 
+				<div class="col-md-4 col-sm-6 clearfix">
+					<div class="feature feature-icon-small">
+						<i class="icon icon-linegraph"></i>
+						<h6 class="text-white">Investigación y desarrollo</h6>
+						<p class="text-white">
+							Se cuenta con un departamento de investigación y desarrollo, que permite
+							elaborar productos personalizados e innovadores de acuerdo a las necesidades
+							de cada clientes.
+						</p>
+					</div><!--end of feature-->
+				</div>
 
+				<div class="col-md-4 col-sm-6 clearfix">
+					<div class="feature feature-icon-small">
+						<i class="icon icon-target"></i>
+						<h6 class="text-white">Valor agregado</h6>
+						<p class="text-white">
+							Capacitación en el manejo de los productos y seguridad  industrial, asesoría
+							y acompañamiento técnico, manejo de la política de incentivo ambiental.
+						</p>
+					</div><!--end of feature-->
+				</div>
 
 			</div><!--end of row-->
 
 		</div><!--end of container-->
 	</section>
 
-	<section class="accordion-section">
+	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-5 col-md-4 align-vertical no-align-mobile">
-					<ul class="icons-large">
-						<li><i class="icon icon-circle-compass"></i></li>
-						<li><i class="icon icon-lightbulb"></i></li>
-						<li><i class="icon icon-scissors"></i></li>
-					</ul>
-					<h1 class="no-margin-bottom">Contamos con infraestructura y tecnología de punta que nos permite procesar las materias primas</h1>
-				</div>
-
-				<div class="col-sm-7 col-md-4">
-					<ul class="accordion">
-						<li class="active">
-							<div class="title"><span>Compromiso y cumplimiento</span></div>
-							<div class="text">
-								<p>
-									Nos comprometemos al máximo con las relaciones que establecemos tanto con clientes como proveedores, y cumplimos con los términos pactados.
-								</p>
-							</div>
-						</li>
-
-						<li>
-							<div class="title"><span>Calidad</span></div>
-							<div class="text">
-								<p>
-									Buscamos siempre ofrecer el producto de la calidad idónea y garantizamos las características fisicoquímicas que ofrecemos.
-								</p>
-							</div>
-						</li>
-
-						<li>
-							<div class="title"><span>Precio justo</span></div>
-							<div class="text">
-								<p>
-									Nuestros productos y servicios están siempre regidos bajo las condiciones y precios del mercado lo que nos permite ser competitivos. Buscamos siempre beneficio mutuo en una relación gana-gana con nuestro aliados.
-								</p>
-							</div>
-						</li>
-
-						<li>
-							<div class="title"><span>Confianza y confidencialidad</span></div>
-							<div class="text">
-								<p>
-									Cada relación comercial es única y personalizada, y la manejamos con absoluta reserva y transparencia.
-								</p>
-							</div>
-						</li>
-					</ul><!--end of accordion-->
-				</div>
-
-				<div class="col-md-4 hidden-sm align-vertical no-align-mobile">
-					<div class="feature">
-						<h5>Respeto y dignidad humana</h5>
-						<p>
-							Teniendo en cuenta que el talento humano es el motor de nuestra Compañía, nos preocupamos por su desarrollo profesional y personal ofreciendo garantías y apoyo para su crecimiento.
-						</p>
-					</div>
-
-					<div class="feature">
-						<h5>Responsabilidad con el medio ambiente</h5>
-						<p>
-							Nos preocupamos por buscar las ultimas tecnologías y productos que sean de bajo impacto para el medio ambiente, de tal forma que podamos ofrecerlos e incorporarlos en los diferentes procesos.
-						</p>
-					</div>
+				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+					<i class="icon icon-jumbo social_facebook"></i>
+					<p>
+						Síganos en <strong><a href="https://www.facebook.com/MAP-Company-SAS-428360660600448/" target="_blank">facebook/map-company-sas</a></strong> para enterarse de más
+					</p>
 				</div>
 			</div><!--end of row-->
-		</div>
+		</div><!--end of container-->
 	</section>
-
 </div>
 <div class="footer-container">
 	<footer class="bg-primary short-2">

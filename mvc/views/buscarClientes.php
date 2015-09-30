@@ -263,10 +263,18 @@ desired effect
                     ?>
 
                     <!-- general form elements disabled -->
-                    <div class="box">
+                    <div class="box box-info box-solid collapsed-box">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Buscar clientes</h3>
-                        </div><!-- /.box-header -->
+                            <h3 class="box-title">Indicaciones para la búsqueda</h3>
+
+                            <div class="box-tools pull-right">
+                                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+                                </button>
+                                <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
                         <div class="box-body">
                             <p>
                                 Use las siguientes opciones para realizar la búsqueda de un cliente.
@@ -407,6 +415,13 @@ desired effect
                                         Se han encontrado <span class="badge label-info"><?php echo $_SESSION['conteo']; ?></span>
                                         registros para esta consulta.
                                     </p>
+                                    <form role="form" action="../utilities/exportarClientes.php?busqueda=<?php
+                                    if(isset($_GET['busqueda'])){echo $_GET['busqueda'];}else{echo'todos';} ?>" method="post">
+                                        <button type="submit" class="btn btn-default" tabindex="14"
+                                                value="exportar" name="exportar" id="todos"><i class="fa fa-file-excel-o">
+                                            </i>  Exportar consulta completa
+                                        </button>
+                                    </form>
                                     <br>
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
@@ -497,14 +512,6 @@ desired effect
                                         </tr>
                                         </tfoot>
                                     </table>
-                                </div>
-                                <div class="box-footer">
-                                    <form role="form" action="../utilities/exportarClientes.php?busqueda=<?php
-                                    if(isset($_GET['busqueda'])){echo $_GET['busqueda'];}else{echo'todos';} ?>" method="post">
-                                        <button type="submit" class="btn btn-default pull-right" tabindex="14"
-                                                value="exportar" name="exportar" id="todos"><i class="fa fa-file-excel-o"></i>  Exportar consulta completa
-                                        </button>
-                                    </form>
                                 </div>
                             </div>
 

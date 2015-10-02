@@ -42,10 +42,10 @@ class ClientesDao
             $query->bindParam(1, $clienteDto->getCedula());
             $query->execute();
 
-            $mensaje="Cliente registrado con éxito en la base de datos.&error=false";
+            $mensaje="Cliente registrado con éxito en la base de datos.&error=0";
 
         } catch (Exception $ex){
-            $mensaje = '&detalleerror='.$ex->getMessage().'&error=true&mensaje=El cliente NO ha sido registrado en la base de datos.';
+            $mensaje = '&detalleerror='.$ex->getMessage().'&error=1&mensaje=El cliente NO ha sido registrado en la base de datos.';
         }
 
         $cnn = null;

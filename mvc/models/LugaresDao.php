@@ -56,14 +56,14 @@ class LugaresDao
     public function buscarLugar($criterio, $busqueda, $comobuscar, PDO $cnn){
         switch ($comobuscar) {
             case 1:
-                try{
-                    $query = $cnn->prepare('select * from lugares where '.$criterio.' = "'.$busqueda.'" ORDER BY lugares.IdLugar ASC');
-                    $query->execute();
-                    $_SESSION['conteo'] = $query->rowCount();
-                    return $query->fetchAll();
-                } catch (Exception $ex){
-                    echo '&detalleerror='.$ex->getMessage().'&encontrados=0';
-                };
+                    try{
+                        $query = $cnn->prepare('select * from lugares where '.$criterio.' = "'.$busqueda.'" ORDER BY lugares.IdLugar ASC');
+                        $query->execute();
+                        $_SESSION['conteo'] = $query->rowCount();
+                        return $query->fetchAll();
+                    } catch (Exception $ex){
+                        echo '&detalleerror='.$ex->getMessage().'&encontrados=0';
+                    };
                 break;
             case 2;
                 try{

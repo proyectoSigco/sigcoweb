@@ -263,8 +263,8 @@ if ($_SESSION['datosLogin']==null || $_SESSION['datosLogin']['EstadoPersona']=="
                                         <label for="apellido">Tipo visita*</label>
                                         <select class="form-control select2" name="tipoVisita" id="tipoVisita">
 
-                                            <option value="ASESORIA"<?php if($empresas['TipoGestiones']=='ASESORIA') {echo 'selected';} ?>> ASESORIA</option>
-                                            <option value="CAPACITACION" <?php if($empresas['TipoGestiones']=='CAPACITACION') {echo 'selected';}?>>CAPACITACIÓN</option>
+                                            <option value="Asesoría"<?php if($empresas['TipoGestiones']=='Asesoría') {echo 'selected';} ?>> ASESORIA</option>
+                                            <option value="Capacitación" <?php if($empresas['TipoGestiones']=='Capacitación') {echo 'selected';}?>>CAPACITACIÓN</option>
 
                                         </select>
 
@@ -404,7 +404,7 @@ $(document).ready(function() {
 });
 $(".select2").select2();
 $( function () {
-    if($('#tipoVisita').val()=='CAPACITACION'){
+    if($('#tipoVisita').val()=='Capacitación'){
         $('#tema').hide();
         $('#producto').show();
     }else{
@@ -428,7 +428,7 @@ $( function () {
 
       });
       $('#tipoVisita').on('change',function(){
-          if($('#tipoVisita').val()=='CAPACITACION'){
+          if($('#tipoVisita').val()=='Capacitación'){
               $('#tema').hide();
               $('#producto').show();
           }else{

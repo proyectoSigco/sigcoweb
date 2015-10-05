@@ -12,16 +12,18 @@ if (isset($_POST['registrar'])) {
     $gestion = new GestionDto();
     $gestion->setIdCliente ($_POST['idCliente']);
     $gestion->setTipoVisita($_POST['tipoVisita']);
-    $gestion->setTemaProducto($_POST['temaproducto']);
+    if($_POST['tipoVisita']=='Capacitación'){
+        $gestion->setTemaProducto($_POST['temaproducto']);
+    }else{
+        $gestion->setTemaProducto($_POST['tema']);
+    }
     $gestion->setAsistentes($_POST['asistentes']);
     $gestion->setObservaciones($_POST['observaciones']);
-    $gestion->setAsunto($_POST['temaproducto']);
     $gestion->setLugar($_POST['lugar']);
     $gestion->setFechaVisita($_POST['fechaVisita']);
     $gestion->setIdUsuario($_SESSION['datosLogin']['id']);
-   $mensaje = $fachada->registrarGestion($gestion);
+    $mensaje = $fachada->registrarGestion($gestion);
     header("Location: ../views/buscarGestion.php?mensaje=".$mensaje);
-
 }
 
 if (isset ($_GET['idproducto'])){
@@ -46,15 +48,13 @@ if (isset($_POST['modificar'])) {
     $idviejo=$_GET['idv'];
     $gestion->setIdCliente ($_POST['idCliente']);
     $gestion->setTipoVisita($_POST['tipoVisita']);
-    if($_POST['tipoVisita']=='CAPACITACION'){
+    if($_POST['tipoVisita']=='Capacitación'){
         $gestion->setTemaProducto($_POST['temaproducto']);
     }else{
         $gestion->setTemaProducto($_POST['tema']);
     }
-
     $gestion->setAsistentes($_POST['asistentes']);
     $gestion->setObservaciones($_POST['observaciones']);
-    $gestion->setAsunto($_POST['temaproducto']);
     $gestion->setLugar($_POST['lugar']);
     $gestion->setFechaVisita($_POST['fechaVisita']);
     $gestion->setEstado($_POST['estado']);

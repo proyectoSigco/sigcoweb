@@ -258,8 +258,8 @@ if ($_SESSION['datosLogin']['EstadoPersona']=="Inactivo" or !isset($_SESSION['da
                                     <div class="form-group">
                                         <label for="apellido">Tipo visita*</label>
                                         <select class="form-control select2" data-placeholder="Seleccione una Empresa" name="tipoVisita" id="tipoVisita">
-                                            <option value="ASESORIA">Asesoria</option>
-                                            <option value="CAPACITACION">Capacitación</option>
+                                            <option value="Asesoría">Asesoria</option>
+                                            <option value="Capacitación">Capacitación</option>
                                         </select>
 
                                     </div>
@@ -277,7 +277,7 @@ if ($_SESSION['datosLogin']['EstadoPersona']=="Inactivo" or !isset($_SESSION['da
                                     </div>
                                     <div class="form-group"  id="tema">
                                         <label for="email" >Tema*</label>
-                                        <input class="form-control" name="temaproducto"  type="text" maxlength="20" placeholder="Desengrasantes">
+                                        <input class="form-control" name="tema"  type="text" maxlength="20" placeholder="Desengrasantes">
                                     </div>
 
                                     <div class="form-group">
@@ -391,10 +391,6 @@ if ($_SESSION['datosLogin']['EstadoPersona']=="Inactivo" or !isset($_SESSION['da
                           notEmpty: {
                               message: 'Este campo es requerido'
                           },
-                          regexp: {
-                              regexp: /^[a-z\sñÑ]+$/i,
-                              message: 'Solo se permiten letras'
-                          },
                           stringLength: {
                               min: 3,
                               max: 30,
@@ -447,7 +443,7 @@ if ($_SESSION['datosLogin']['EstadoPersona']=="Inactivo" or !isset($_SESSION['da
               $('#cliente').val(data);
           });
       $( function () {
-          if($('#tipoVisita').val()=='CAPACITACION'){
+          if($('#tipoVisita').val()=='Capacitación'){
               $('#tema').hide();
               $('#producto').show();
           }else{
@@ -473,7 +469,7 @@ if ($_SESSION['datosLogin']['EstadoPersona']=="Inactivo" or !isset($_SESSION['da
       });
 
       $('#tipoVisita').on('change',function(){
-          if($('#tipoVisita').val()=='CAPACITACION'){
+          if($('#tipoVisita').val()=='Capacitación'){
               $('#tema').hide();
               $('#producto').show();
           }else{

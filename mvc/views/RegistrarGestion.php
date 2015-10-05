@@ -191,8 +191,8 @@ if ($_SESSION['datosLogin']['EstadoPersona']=="Inactivo" or !isset($_SESSION['da
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Formulario de registro
-                    <small>Visitas</small>
+                    Visitas
+                    <small> Formulario de registro</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
@@ -209,13 +209,19 @@ if ($_SESSION['datosLogin']['EstadoPersona']=="Inactivo" or !isset($_SESSION['da
                     <div class="col-md-10">
                         <form id="defaultForm" action="../controllers/ControladorGestion.php" method="post">
 
-                            <div class="box box-default">
+                            <div class="box box-info box-solid collapsed-box">
                                 <div class="box-header with-border">
-                                    <h3 class="box-title">Registrar Visita</h3>
+                                    <h3 class="box-title">Indicaciones de registro</h3>
+                                    <div class="box-tools pull-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+                                        </button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i>
+                                        </button>
+                                    </div>
                                 </div>
                                 <!-- /.box-header -->
                                 <div class="box-body">
-
+                                    <!-- text input -->
                                     <div class="form-group">
                                         <p>
                                             Por favor diligencie el siguiente formulario para registrar una nueva
@@ -300,9 +306,9 @@ if ($_SESSION['datosLogin']['EstadoPersona']=="Inactivo" or !isset($_SESSION['da
                                         <label for="imagen">Lugar*</label>
                                         <input class="form-control" name="lugar" type="text" id="lugar" placeholder="Carrera 15 # 24 10" required>                                    </div>
                                     <div class="box-footer">
-                                        <input type="button" class="btn btn-warning" tabindex="15"
+                                        <input type="button" class="btn btn-warning pull-right" tabindex="15"
                                                value="Cancelar"/>
-                                        <button type="submit" class="btn btn-success pull-right" tabindex="14"
+                                        <button type="submit" class="btn btn-success" tabindex="14"
                                                 value="registrar" name="registrar" id="guardar">Guardar Gestión
                                         </button>
                                     </div>

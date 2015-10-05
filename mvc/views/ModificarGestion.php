@@ -192,8 +192,8 @@ if ($_SESSION['datosLogin']==null || $_SESSION['datosLogin']['EstadoPersona']=="
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Formulario de modificación
-                    <small>Visitas</small>
+                    Visitas
+                    <small> Formulario de modificación</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
@@ -210,17 +210,23 @@ if ($_SESSION['datosLogin']==null || $_SESSION['datosLogin']['EstadoPersona']=="
                     <div class="col-md-10">
                         <form id="defaultForm" action="../controllers/ControladorGestion.php?idv=<?php echo $idviejo ?>" method="post">
 
-                            <div class="box box-default">
+                            <div class="box box-info box-solid collapsed-box">
                                 <div class="box-header with-border">
-                                    <h3 class="box-title">Registrar Visita</h3>
+                                    <h3 class="box-title">Modificar Gestión</h3>
+                                    <div class="box-tools pull-right">
+                                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+                                        </button>
+                                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i>
+                                        </button>
+                                    </div>
                                 </div>
                                 <!-- /.box-header -->
                                 <div class="box-body">
-
+                                    <!-- text input -->
                                     <div class="form-group">
                                         <p>
-                                            Por favor diligencie el siguiente formulario para registrar una nueva
-                                            Gestion.<br><br>
+                                            Por favor diligencie el siguiente formulario para actualizar la información
+                                            de una Gestión.<br><br>
                                             Recuerde que este formulario contiene campos obligatorios(*).
                                         </p>
                                     </div>
@@ -304,7 +310,7 @@ if ($_SESSION['datosLogin']==null || $_SESSION['datosLogin']['EstadoPersona']=="
                                         <label for="pass1">Lugar*</label>
                                         <input class="form-control" name="lugar" id="lugar" value="<?php echo $empresas['LugarGestiones']?>" type="text" maxlength="20">
                                     </div>
-
+                                    <?php if($_SESSION['datosLogin']['NombreRol']=='Coordinador'){?>
                                     <div class="form-group">
                                         <label for="imagen">Estado de visita</label>
                                         <select class="form-control select2" name="estado" type="text"  id="lugar" placeholder="Carrera 15 # 24 10" required>
@@ -313,11 +319,12 @@ if ($_SESSION['datosLogin']==null || $_SESSION['datosLogin']['EstadoPersona']=="
                                             <option value="REALIZADA"<?php if($empresas['EstadoGestiones']=='Realizada'){ echo 'selected'; }  ?>>REALIZADA</option>
                                         </select>
                                     </div>
+                                   <?php } ?>
                                     <div class="box-footer">
 
-                                        <input type="button" class="btn btn-warning" tabindex="15"
+                                        <input type="button" class="btn btn-warning pull-right" tabindex="15"
                                                onclick="location.href='buscarGestion.php'" value="Cancelar"/>
-                                        <button type="submit" class="btn btn-success pull-right" tabindex="14"
+                                        <button type="submit" class="btn btn-success" tabindex="14"
                                                 value="registrar" name="modificar" id="guardar">Guardar Gestión
                                         </button>
                                     </div>

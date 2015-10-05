@@ -75,9 +75,12 @@ class GestionDao {
     public function listarGestion($idUsuario,PDO $cnn) {
 
     try {
-
+        if($_SESSION['datosLogin']['NombreRol']=='Coordinador'){
+            $query = $cnn->prepare('select * from Gestiones');
+        }else{
             $query = $cnn->prepare("call listarGestion (?)");
             $query->bindParam(1,$idUsuario);
+        }
             $query->execute();
             $_SESSION['conteo']=$query->rowCount();
             return $query->fetchAll();

@@ -420,6 +420,14 @@ if ($_SESSION['datosLogin']==null || $_SESSION['datosLogin']['EstadoPersona']=="
                                             registros para esta consulta.
                                         </p>
                                         <br>
+                                        <div class="box-footer">
+                                            <form role="form" action="../utilities/exportarGestion.php?busqueda=<?php
+                                            if(isset($_GET['busqueda'])){echo $_GET['busqueda'];}else{echo'todos';} ?>" method="post">
+                                                <button type="submit" class="btn btn-default pull-left" tabindex="14"
+                                                        value="exportar" name="exportar" id="todos"><i class="fa fa-file-excel-o"></i>  Exportar consulta completa
+                                                </button>
+                                            </form>
+                                        </div>
                                         <table id="example1" class="table table-bordered table-striped">
                                             <thead>
                                             <tr>
@@ -484,14 +492,7 @@ if ($_SESSION['datosLogin']==null || $_SESSION['datosLogin']['EstadoPersona']=="
                                             </tfoot>
                                         </table>
                                     </div>
-                                    <div class="box-footer">
-                                        <form role="form" action="../utilities/exportarGestion.php?busqueda=<?php
-                                        if(isset($_GET['busqueda'])){echo $_GET['busqueda'];}else{echo'todos';} ?>" method="post">
-                                            <button type="submit" class="btn btn-default pull-right" tabindex="14"
-                                                    value="exportar" name="exportar" id="todos"><i class="fa fa-file-excel-o"></i>  Exportar consulta completa
-                                            </button>
-                                        </form>
-                                    </div>
+
                                 </div>
                                 <?php
                             }

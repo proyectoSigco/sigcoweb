@@ -24,40 +24,40 @@ class PHPMailerTest extends PHPUnit_Framework_TestCase
     /**
      * Holds the default phpmailer instance.
      * @private
-     * @type PHPMailer
+     * @var PHPMailer
      */
     public $Mail;
 
     /**
      * Holds the SMTP mail host.
      * @public
-     * @type string
+     * @var string
      */
     public $Host = '';
 
     /**
      * Holds the change log.
      * @private
-     * @type string[]
+     * @var string[]
      */
     public $ChangeLog = array();
 
     /**
      * Holds the note log.
      * @private
-     * @type string[]
+     * @var string[]
      */
     public $NoteLog = array();
 
     /**
      * Default include path
-     * @type string
+     * @var string
      */
     public $INCLUDE_DIR = '../';
 
     /**
      * PIDs of any processes we need to kill
-     * @type array
+     * @var array
      * @access private
      */
     private $pids = array();
@@ -761,6 +761,8 @@ class PHPMailerTest extends PHPUnit_Framework_TestCase
 
         //Check that a quoted printable encode and decode results in the same as went in
         $t = file_get_contents(__FILE__); //Use this file as test content
+        //Force line breaks to UNIX-style
+        $t = str_replace(array("\r\n", "\r"), "\n", $t);
         $this->assertEquals(
             $t,
             quoted_printable_decode($this->Mail->encodeQP($t)),
@@ -770,6 +772,13 @@ class PHPMailerTest extends PHPUnit_Framework_TestCase
             $this->Mail->encodeQP($t),
             $this->Mail->encodeQPphp($t),
             'Quoted-Printable BC wrapper failed'
+        );
+        //Force line breaks to Windows-style
+        $t = str_replace("\n", "\r\n", $t);
+        $this->assertEquals(
+            $t,
+            quoted_printable_decode($this->Mail->encodeQP($t)),
+            'Quoted-Printable encoding round-trip failed (Windows line breaks)'
         );
     }
 
@@ -961,6 +970,31 @@ EOT;
 
         //Make sure that trying to attach a nonexistent file fails
         $this->assertFalse($this->Mail->addAttachment(__FILE__ . md5(microtime()), 'nonexistent_file.txt'));
+
+        $this->buildBody();
+        $this->assertTrue($this->Mail->send(), $this->Mail->ErrorInfo);
+    }
+
+    /**
+     * Test embedded image without a name
+     */
+    public function testHTMLStringEmbedNoName()
+    {
+        $this->Mail->Body = 'This is the <strong>HTML</strong> part of the email.';
+        $this->Mail->Subject .= ': HTML + unnamed embedded image';
+        $this->Mail->isHTML(true);
+
+        if (!$this->Mail->addStringEmbeddedImage(
+            file_get_contents('../examples/images/phpmailer_mini.png'),
+            md5('phpmailer_mini.png').'@phpmailer.0',
+            '', //intentionally empty name
+            'base64',
+            'image/png',
+            'inline')
+        ) {
+            $this->assertTrue(false, $this->Mail->ErrorInfo);
+            return;
+        }
 
         $this->buildBody();
         $this->assertTrue($this->Mail->send(), $this->Mail->ErrorInfo);
